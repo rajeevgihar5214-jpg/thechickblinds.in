@@ -508,3 +508,32 @@ a {
     right: 14px;
   }
 }
+
+
+/* Crawlable internal location links */
+.area-tags a.area-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.area-tags a.area-link:hover,
+.area-tags a.area-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  outline: none;
+}
+
+.site-location-links .area-tags {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
